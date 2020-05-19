@@ -1,0 +1,5 @@
+<!--components/card/index.wxml-->
+<view class="container" >
+    <image class="img" src="{{imageUrl}}" />
+    <text class="name">{{name}}</text>
+</view>

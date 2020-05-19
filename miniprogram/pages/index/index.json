@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "c-card":"/components/card/index"
+  }
 }
