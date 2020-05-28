@@ -1,7 +1,24 @@
 <!-- miniprogram/pages/index/index.wxml -->
+<view class="searchContainer">
+	<image class="searchImg" src="/images/search.png"></image>
+	<input type="text" value="{{searchInput}}" bindfocus="onSearchShow" bindblur="getSearch" class="search" placeholder="请输入你想要搜索的内容……" />
+	<view>
+		<image hidden="{{searchShow}}" bind:tap="exitSearch" class="exit" src="/images/exit.png"></image>
+	</view>
+</view>
+
 <view class="container">
-        <c-card wx:for="{{20}}" class="card" name="洗洁精" imageUrl="../../images/xjj.png"></c-card>
-        <view class="card ccc"></view>
-        <view class="card ccc"></view>
-        <image bind:tap="onAddGoodsGoTo" class="add" src="../../images/add.png" />
+	<c-card wx:for="{{goodsList}}" bind:tap="onGoodsGoTo" data-id="{{item._id}}" wx:key="key" class="card" name="{{item.goodsname}}" imageUrl="{{item.imgUrl}}"></c-card>
+	<view class="card ccc"></view>
+	<view class="card ccc"></view>
+	<image bind:tap="onAddGoodsGoTo" class="add" src="../../images/add.png" />
+</view>
+
+<view class="searchContent" hidden="{{searchShow}}">
+	<view class="container">
+		<c-card wx:for="{{searchList}}" bind:tap="onGoodsGoTo" data-id="{{item._id}}" wx:key="key" class="card" name="{{item.goodsname}}" imageUrl="{{item.imgUrl}}"></c-card>
+		<view class="card ccc"></view>
+		<view class="card ccc"></view>
+		<image bind:tap="onAddGoodsGoTo" class="add" src="../../images/add.png" />
+	</view>
 </view>

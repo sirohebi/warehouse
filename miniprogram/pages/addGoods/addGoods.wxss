@@ -17,3 +17,7 @@
 	flex-direction: row;
 	margin-bottom: 40rpx;
 }
+
+.radio{
+	margin-left: 24rpx;
+}

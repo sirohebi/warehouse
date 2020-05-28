@@ -1,5 +1,6 @@
 {
   "usingComponents": {
     "l-image-picker":"/miniprogram_npm/lin-ui/image-picker/index"
-  }
+  },
+  "navigationBarTitleText":"添加商品"
 }

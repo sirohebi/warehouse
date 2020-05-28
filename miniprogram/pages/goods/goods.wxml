@@ -1,0 +1,30 @@
+<!--miniprogram/pages/goods/goods.wxml-->
+<view>
+	<view class="goods" wx:for="{{goodsList}}" wx:key="key">
+		<image src="{{item.imgUrl}}"></image>
+		<view class="content">
+			<text class="title">商品名称:</text>
+			<text class="goodsdata">{{item.goodsname}}</text>
+		</view>
+		<view class="content">
+			<text class="title">商品购入价格:</text>
+			<text class="goodsdata">{{item.goods_buy_price}}</text>
+		</view>
+		<view class="content">
+			<text class="title">商品售出价格:</text>
+			<text class="goodsdata">{{item.goods_sale_price}}</text>
+		</view>
+		<view class="content">
+			<text class="title">商品规格:</text>
+			<text class="goodsdata">{{item.goods_size}}</text>
+		</view>
+		<view class="content">
+			<text class="title">商品单位:</text>
+			<text class="goodsdata">{{item.goods_unit}}</text>
+		</view>
+		<view class="content">
+			<text class="title">来源渠道:</text>
+			<text class="goodsdata">{{item.channel_sales}}</text>
+		</view>
+	</view>
+</view>
