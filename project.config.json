@@ -26,7 +26,7 @@
 	},
 	"appid": "wx9b0f072c8873e0cd",
 	"projectname": "warehouse",
-	"libVersion": "2.11.0",
+	"libVersion": "2.10.4",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {
@@ -62,6 +62,13 @@
 					"id": -1,
 					"name": "pages/addGoods/addGoods",
 					"pathName": "pages/addGoods/addGoods",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/goods/goods",
+					"pathName": "pages/goods/goods",
 					"scene": null
 				}
 			]

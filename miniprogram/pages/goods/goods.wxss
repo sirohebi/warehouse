@@ -1,4 +1,33 @@
 /* miniprogram/pages/goods/goods.wxss */
+.container{
+	width: 100%;
+}
+
 .goods {
-	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.content{
+	text-align: center;
+	margin: 10rpx 0rpx;
+}
+
+.img{
+	width: 100%;
+	text-align: center;
+}
+
+.goodsdata{
+	margin-left: 10rpx;
+}
+
+.redact{
+	position: fixed;
+	z-index: 99;
+	width: 60rpx;
+	height: 60rpx;
+	right: 20rpx;
+	bottom: 20rpx;
 }

@@ -2,7 +2,8 @@
 	"pages": [
 		"pages/index/index",
 		"pages/addGoods/addGoods",
-		"pages/goods/goods"
+		"pages/goods/goods",
+		"pages/redact/redact"
 	],
 	"window": {
 		"backgroundColor": "#F6F6F6",

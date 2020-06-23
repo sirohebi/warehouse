@@ -1,0 +1,30 @@
+/* miniprogram/pages/redact/redact.wxss */
+.goods{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	justify-content: center;
+}
+
+.content{
+	display: flex;
+	flex-direction: row;
+	margin-top: 20rpx;
+}
+
+.title{
+	
+}
+
+.goodsdata{
+	background-color: #f5f5f5;
+	width: 400rpx;
+	border-radius: 10rpx;
+	margin-left: 9em;
+}
+
+tr{
+	background-color: #dcdcdc;
+	width: 9em;
+	writing-mode: lr-bt;
+}

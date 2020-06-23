@@ -16,15 +16,25 @@ Page({
 	 * 生命周期函数--监听页面加载
 	 */
 	onLoad: function(options) {
-		let id = options.id
-		http.getGoods(id).then((res) => {
+		let _id = options.id
+		this.setData({
+			id: _id
+		})
+		http.getGoods(this.data.id).then((res) => {
 				this.setData({
-					goodsList: res
+					goodsList: res,
 				})
 			},
 			(err) => {
 				console.log(err)
 			})
+	},
+	
+	gotoRedact:function(e){
+		let id = e.currentTarget.dataset.id
+		wx.redirectTo({
+			url:"../redact/redact?id=" + id
+		})
 	},
 
 	/**
@@ -38,7 +48,7 @@ Page({
 	 * 生命周期函数--监听页面显示
 	 */
 	onShow: function() {
-
+		
 	},
 
 	/**

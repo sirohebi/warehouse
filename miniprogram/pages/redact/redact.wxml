@@ -1,0 +1,15 @@
+<!--miniprogram/pages/redact/redact.wxml-->
+<view class="container">
+	<view class="goods" wx:for="{{goodsList}}" wx:key="key">
+		<image mode="aspectFit" class="img" src="{{item.imgUrl}}"></image>
+		<form bindsubmit="onUpdateGoods" data-id="{{item._id}}">
+			<l-input name="goodsname" label="商品名称:" disabled="{{true}}" value="{{item.goodsname}}"></l-input>
+			<l-input name="goods_buy_price" label="商品购入价格:" value="{{item.goods_buy_price}}"></l-input>
+			<l-input name="goods_sale_price" label="商品售出价格:" value="{{item.goods_sale_price}}"></l-input>
+			<l-input name="goods_size" label="商品规格:" disabled="{{true}}" value="{{item.goods_size}}"></l-input>
+			<l-input name="goods_unit" label="商品单位:" disabled="{{true}}" value="{{item.goods_unit}}"></l-input>
+			<l-input name="channel_sales" label="来源渠道:" value="{{item.channel_sales}}"></l-input>
+			<button form-type="submit">提交修改</button>
+		</form>
+	</view>
+</view>
