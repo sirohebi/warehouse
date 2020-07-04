@@ -1,0 +1,28 @@
+/* miniprogram/pages/login/login.wxss */
+.container{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+}
+
+.userlogin{
+	margin-top: 120px;
+}
+
+.inputUser{
+	display: flex;
+	flex-direction: row;
+	margin: 40rpx;
+}
+
+.laber{
+	width: 100rpx;
+	text-align:right;
+}
+
+.input{
+	border-radius: 6rpx;
+	width: 500rpx;
+	background-color: #ededed;
+}
