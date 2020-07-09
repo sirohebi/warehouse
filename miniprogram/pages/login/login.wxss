@@ -17,12 +17,17 @@
 }
 
 .laber{
-	width: 100rpx;
+	width: 120rpx;
 	text-align:right;
+	vertical-align: middle;
+	height: 60rpx;
 }
 
 .input{
 	border-radius: 6rpx;
-	width: 500rpx;
+	width: 400rpx;
+	height: 60rpx;
+	margin-left: 10rpx;
+	vertical-align: middle;
 	background-color: #ededed;
 }

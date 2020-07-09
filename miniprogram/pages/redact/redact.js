@@ -26,7 +26,8 @@ Page({
 				console.log(err)
 			})
 	},
-
+	
+	//商品修改功能
 	onUpdateGoods: function (e) {
 		wx.showLoading({
 			title:"正在修改,请稍等……"

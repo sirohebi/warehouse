@@ -1,3 +1,4 @@
+//获取商品数据
 class HTTP{
 	getGoods(id){
 		return new Promise(function(reslove, reject){

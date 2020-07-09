@@ -28,6 +28,15 @@
 	z-index: 99;
 	width: 60rpx;
 	height: 60rpx;
-	right: 20rpx;
-	bottom: 20rpx;
+	right: 50rpx;
+	bottom: 50rpx;
+}
+
+.delete{
+	position: fixed;
+	z-index: 99;
+	width: 60rpx;
+	height: 60rpx;
+	right: 50rpx;
+	bottom: 140rpx;
 }

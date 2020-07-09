@@ -15,6 +15,7 @@ Page({
 	/**
 	 * 生命周期函数--监听页面加载
 	 */
+	//进入商品详情时的数据加载请求
 	onLoad: function(options) {
 		let _id = options.id
 		this.setData({
@@ -30,11 +31,40 @@ Page({
 			})
 	},
 	
+	//前往商品的编辑页面
 	gotoRedact:function(e){
 		let id = e.currentTarget.dataset.id
 		wx.redirectTo({
 			url:"../redact/redact?id=" + id
 		})
+	},
+	
+	//商品的删除功能
+	gotoDelete:function(e){
+		let id = e.currentTarget.dataset.id
+		const db = wx.cloud.database()
+		//删除时的确认提示
+		wx.showModal({
+			title: '提示',
+			content: '是否确定删除该商品',
+			success(res){
+				if(res.confirm){
+					db.collection('goods').doc(id).remove().then((res)=>{
+						wx.showToast({
+							title: '商品删除成功',
+							icon: 'none',
+							duration: 2500
+						})
+						wx.navigateBack({
+							delta:1
+						})
+					}).catch((err)=>{
+						
+					})
+				}
+			}
+		})
+
 	},
 
 	/**

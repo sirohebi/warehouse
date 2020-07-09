@@ -26,6 +26,7 @@
 			<text class="title">来源渠道:</text>
 			<text class="goodsdata">{{item.channel_sales}}</text>
 		</view>
+		<image src="../../images/delete.png" data-id="{{item._id}}" bind:tap="gotoDelete" class="delete"></image>
 		<image src="../../images/bj.png" data-id="{{item._id}}" bind:tap="gotoRedact" class="redact"></image>
 	</view>
 </view>

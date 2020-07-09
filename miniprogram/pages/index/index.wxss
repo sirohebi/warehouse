@@ -20,9 +20,10 @@
     width: 80rpx;
     height: 80rpx;
     position: fixed;
-    right: 14rpx;
-    bottom: 20rpx;
+    right: 30rpx;
+    bottom: 30rpx;
     z-index: 99;
+	
 }
 
 .searchContainer{

@@ -23,7 +23,8 @@ Page({
 	onReady: function() {
 
 	},
-
+	
+	//登陆用户的校验和登陆
 	onUserLogin: function(e) {
 		let user = e.detail.value.user
 		let password = e.detail.value.password
@@ -35,6 +36,12 @@ Page({
 			if(res.data[0]){
 				wx.navigateTo({
 					url:'/pages/index/index'
+				})
+			}else{
+				wx.showToast({
+					title: '你输入得账号或密码不正确……',
+					icon: 'none',
+					duration: 2000
 				})
 			}
 		},(err)=>{

@@ -22,7 +22,10 @@
 			"disablePlugins": [],
 			"outputPath": ""
 		},
-		"useCompilerModule": true
+		"useIsolateContext": true,
+		"useCompilerModule": true,
+		"userConfirmedUseCompilerModuleSwitch": false,
+		"compileHotReLoad": false
 	},
 	"appid": "wx9b0f072c8873e0cd",
 	"projectname": "warehouse",
@@ -69,6 +72,20 @@
 					"id": -1,
 					"name": "pages/goods/goods",
 					"pathName": "pages/goods/goods",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/goods/goods",
+					"pathName": "pages/goods/goods",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/addGoods/addGoods",
+					"pathName": "pages/addGoods/addGoods",
 					"scene": null
 				}
 			]

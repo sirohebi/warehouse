@@ -1,3 +1,4 @@
+//登陆校验
 class LOGINS {
 	userLogin(userInfo){
 		const db = wx.cloud.database()

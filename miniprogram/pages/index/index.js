@@ -14,6 +14,7 @@ Page({
 	/**
 	 * 生命周期函数--监听页面加载
 	 */
+	//主页的数据加载
 	onLoad: function(options) {
 		const db = wx.cloud.database()
 		db.collection('goods').where({}).get({}).then((res) => {
@@ -25,14 +26,14 @@ Page({
 		})
 	},
 
-
-
+	//前往添加商品的页面功能
 	onAddGoodsGoTo: function(e) {
 		wx.navigateTo({
 			url: "../addGoods/addGoods"
 		})
 	},
-
+	
+	//点击变更搜索页面的显隐
 	onSearchShow: function(e) {
 		this.setData({
 			searchShow: false,
@@ -40,6 +41,7 @@ Page({
 		})
 	},
 
+	//点击退出搜索页面并把搜索的数据置空
 	exitSearch: function(e) {
 		this.setData({
 			searchShow: !this.data.searchShow,
@@ -47,7 +49,8 @@ Page({
 			searchList: []
 		})
 	},
-
+	
+	//加载搜索的数据
 	getSearch: function(e) {
 		let searchText = e.detail.value
 		const db = wx.cloud.database()
@@ -64,7 +67,8 @@ Page({
 			console.error(err)
 		})
 	},
-
+	
+	//前往商品的详情页面
 	onGoodsGoTo: function(e) {
 		let id = e.currentTarget.dataset.id
 		wx.navigateTo({

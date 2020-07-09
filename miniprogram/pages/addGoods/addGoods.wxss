@@ -2,7 +2,7 @@
 .container{
 	display: flex;
 	flex-direction: column;
-	padding: 70rpx;
+	padding: 50rpx;
 }
 
 .input{
@@ -19,5 +19,15 @@
 }
 
 .radio{
-	margin-left: 24rpx;
+	margin-left: 14rpx;
+	font-size: 24rpx;
+}
+
+.laber{
+	width: 240rpx;
+	text-align: right;
+}
+
+.image{
+	margin-left: 10rpx;
 }

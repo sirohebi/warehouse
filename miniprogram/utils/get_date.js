@@ -1,3 +1,4 @@
+//获取当前时间
 function formatTime(date) {
   let year = date.getFullYear()
   let month = date.getMonth() + 1

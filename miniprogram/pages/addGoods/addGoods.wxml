@@ -2,19 +2,19 @@
 <view class="container">
     <form class="goodscontainer" bindsubmit="onGoodsAdd">
 		<view class="content">
-			<text class="goodsName">商品名称:</text>
+			<text class="laber">商品名称:</text>
 			<input name="goodsname" class="input" value="{{input_value}}" type="text" placeholder="请输入商品名称……" />
 		</view>
 		<view class="content">
-			<text class="goodsimg">商品图片:</text>
-			<l-image-picker bind:linchange="onGoodsImgFile" count="1"></l-image-picker>
+			<text class="laber">商品图片:</text>
+			<l-image-picker clear="{{clear}}" class="image" bind:linchange="onGoodsImgFile" count="1"></l-image-picker>
 		</view>
 		<view class="content">
-			<text class="">商品购入价格:</text>
+			<text class="laber">商品购入价格:</text>
 			<input name="goods_buy_price" value="{{input_value}}" type="number" class="input" placeholder="请输入购入价格……" />
 		</view>
 		<view class="content">
-			<text class="">商品来源渠道:</text>
+			<text class="laber">商品来源渠道:</text>
 			<radio-group name="channel_sales">
 				<label class="radio"><radio checked="{{checked}}" value="淘宝" />淘宝</label>
 				<label class="radio"><radio checked="{{checked}}" value="京东" />京东</label>
@@ -22,15 +22,15 @@
 			</radio-group>
 		</view>
 		<view class="content">
-			<text class="">商品售出价格:</text>
+			<text class="laber">商品售出价格:</text>
 			<input type="number" value="{{input_value}}" class="input" name="goods_sale_price" placeholder="请输入售出价格……" />
 		</view>
 		<view class="content">
-			<text class="">商品规格:</text>
+			<text class="laber">商品规格:</text>
 			<input type="text" value="{{input_value}}" class="input" name="goods_size" placeholder="请输入商品规格……" />
 		</view>
 		<view class="content">
-			<text class="">商品单位:</text>
+			<text class="laber">商品单位:</text>
 			<input type="text" value="{{input_value}}" class="input" name="goods_unit" placeholder="请输入商品单位……" />
 		</view>
 		<button form-type="submit">添加商品</button>
