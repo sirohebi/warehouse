@@ -8,12 +8,14 @@
 
 .userlogin{
 	margin-top: 120px;
+	font-size: 60rpx;
 }
 
 .inputUser{
 	display: flex;
 	flex-direction: row;
 	margin: 40rpx;
+	vertical-align: middle;
 }
 
 .laber{
@@ -21,6 +23,7 @@
 	text-align:right;
 	vertical-align: middle;
 	height: 60rpx;
+	margin-top: 8rpx;
 }
 
 .input{
@@ -30,4 +33,21 @@
 	margin-left: 10rpx;
 	vertical-align: middle;
 	background-color: #ededed;
+}
+
+.zhuce{
+	width: 60rpx;
+	height: 60rpx;
+}
+
+.reg-view{
+	width: 80rpx;
+	height: 120rpx;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	right: 60rpx;
+	top: 40rpx;
 }

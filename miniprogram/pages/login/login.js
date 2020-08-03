@@ -49,6 +49,12 @@ Page({
 		})
 	},
 
+	onRegShow:function (){
+		wx.navigateTo({
+			url:'../userReg/userReg'
+		})
+	},
+
 	/**
 	 * 生命周期函数--监听页面显示
 	 */

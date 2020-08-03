@@ -1,0 +1,25 @@
+<!-- miniprogram/pages/userReg/userReg.wxml -->
+<view class="container">
+    <text class="head">用户注册</text>
+    <view class="content">
+        <form bindsubmit="userReg">
+            <view class="mian">
+                <text class="user-laber">用户名:</text>
+                <input class="userInfoInput" type="text" value="{{nullValue}}" name="name" />
+            </view>
+            <view class="mian">
+                <text class="user-laber">密码:</text>
+                <input class="userInfoInput" type="password" value="{{nullValue}}" name="userPassword" />
+            </view>
+            <view class="mian">
+                <text class="user-laber">再次输入密码:</text>
+                <input class="userInfoInput" type="password" value="{{nullValue}}" name="again_password" />
+            </view>
+            <view class="mian">
+                <text class="user-laber">邀请码:</text>
+                <input class="userInfoInput" type="text" value="{{nullValue}}" name="invite_code" />
+            </view>
+            <button form-type="submit">提交注册</button>
+        </form>
+    </view>
+</view>

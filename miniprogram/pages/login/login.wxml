@@ -12,4 +12,8 @@
 		</view>
 		<button form-type="submit">登陆</button>
 	</form>
+	<view bind:tap="onRegShow" class="reg-view">
+		<image src="../../images/zhuce.png" class="zhuce" />
+		<text style="text-align: center;" class="">注册</text>
+	</view>
 </view>
